@@ -1,0 +1,9 @@
+project: savantenvs/ebpf-for-windows
+target: prevail_elf_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/prevail_elf_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/prevail_elf_fuzzer
+    libfuzzer: true
+    timeout: 30

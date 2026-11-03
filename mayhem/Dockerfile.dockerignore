@@ -1,0 +1,6 @@
+# Keep stale host build output out of the COPY . /mayhem context; build.sh regenerates all of it in-image.
+# .git and the submodule sources are deliberately NOT excluded: the build and `git clean -ffdX` need them.
+mayhem/build/
+prevail_elf_fuzzer
+prevail_elf_fuzzer-standalone
+ctrf-report.json
